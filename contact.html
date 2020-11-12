@@ -5,6 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>MyFirstPage</title>
+   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -16,21 +17,21 @@
    </header>
 
    <main>
-      <h2>Contact Us</h2>
+      <h2 class="title_contact">Contact Us</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magni blanditiis dolor alias sint laudantium
          qui? Assumenda quas quibusdam nulla, nesciunt ea laudantium, ducimus dolor quod ab ratione consequuntur
          aliquid.
       </p>
-      <img src="img/me.jpg" alt="myPhoto">
+      <img class="mePhoto" src="img/me.jpg" alt="myPhoto">
       <form action="#">
-         <h4>Address</h4>
+         <h4 class="small_title">Address</h4>
          <p>Lorem ipsum dolor sit amet</p>
-         <h4>Phone</h4>
+         <h4 class="small_title">Phone</h4>
          <ul>
             <li><a href="tel:89870000000"></a> 89870000000</li>
             <li><a href="tel:89870000001"></a> 89870000001</li>
          </ul>
-         <h4>Online Service</h4>
+         <h4 class="small_title">Online Service</h4>
          <ul>
             <li class="myPage">
                <a href="index.html">My website</a>
@@ -40,12 +41,12 @@
             </li>
          </ul>
 
-         <h4 id="email">Send us message</h4>
-         Full Name <input type="text" maxlength="25" size="40" placeholder="Ivanov Ivan Ivanovich"><br>
-         Email <input type="text" maxlength="25" size="40" placeholder="mymail@gmail.com">
+         <h4 class="small_title">Send us message</h4>
+         Full Name <input class="input" type="text" maxlength="25" size="40" placeholder="Ivanov Ivan Ivanovich"><br>
+         Email <input class="input" type="text" maxlength="25" size="40" placeholder="mymail@gmail.com">
          <p>Message</p>
-         <textarea name="text" cols="30" rows="10" placeholder="Enter you message"></textarea>
-         <button>Submit
+         <textarea class="input" name="text" cols="30" rows="10" placeholder="Enter you message"></textarea>
+         <button class="send">Submit
          </button>
       </form>
       <script type="text/javascript" charset="utf-8" async
