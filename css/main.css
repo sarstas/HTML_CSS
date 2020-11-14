@@ -13,6 +13,11 @@ p{
    color: #1F3F68;
 }
 
+.title_3lvl{
+   font-size: 36px;
+   text-align: center;
+}
+
 .title_contact{
    font-weight: 500;
    font-size: 44px;
