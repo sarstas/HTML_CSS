@@ -11,16 +11,31 @@
 <body>
    <div class="container">
       <header>
-         <div class="header_top">
-            <div class="header_logo">
-               <ul>
-                  <li><a href="index.html">Главная</a></li>
-                  <li><a href="contact.html">Контакты</a></li>
-               </ul>
-            </div>
-            <div class="header_contact">
-
-            </div>
+         <div class="container">
+            <header class="header">
+               <div class="header_top">
+                  <div class="header_logo">
+                     <a href="index.html">
+                        <div class="circle circle_white"></div>
+                        <div class="circle circle_blue"></div>
+                     </a>
+                  </div>
+                  <div class="header_contact">
+                     <a href="contact.html">Контакты</a>
+                  </div>
+               </div>
+               <div class="sendMessage_top">
+                  <h2 class="title_contact">Contact Us</h2>
+                  <div>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magni blanditiis dolor alias
+                        sint
+                        laudantium
+                        qui? Assumenda quas quibusdam nulla, nesciunt ea laudantium, ducimus dolor quod ab ratione
+                        consequuntur
+                        aliquid.
+                     </p>
+                  </div>
+               </div>
          </div>
       </header>
    </div>
@@ -28,60 +43,55 @@
 
    <main>
       <div class="container">
-         <div class="sendMessage">
-            <div class="sendMessage_top">
-               <h2 class="title_contact">Contact Us</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus magni blanditiis dolor alias sint
-                  laudantium
-                  qui? Assumenda quas quibusdam nulla, nesciunt ea laudantium, ducimus dolor quod ab ratione
-                  consequuntur
-                  aliquid.
-               </p>
+         <div class="sendMessage_form">
+            <div class="sendMessage_leftside">
+               <div class="sendMessage_img">
+                  <img class="img_mePhoto" src="img/me.jpg" alt="myPhoto">
+               </div>
+
+               <div class="sendMessage_adress">
+                  <h4 class="small_title adress_title">Address</h4>
+                  <p>Lorem ipsum dolor sit amet</p>
+               </div>
+
+               <div class="sendMessage_phone">
+                  <h4 class="small_title">Phone</h4>
+                  <ul class="phone_items">
+                     <li><a class="phone_item" href="tel:89870000000"></a> 89870000000</li>
+                     <li><a class="phone_item" href="tel:89870000001"></a> 89870000001</li>
+                  </ul>
+               </div>
+
+               <div class="sendMessage_online">
+                  <h4 class="small_title">Online Service</h4>
+                  <ul>
+                     <li class="myPage">
+                        <a class="link_item" href="index.html">My website</a>
+                     </li>
+                     <li class="email">
+                        <a class="link_item" href="email">My email</a>
+                     </li>
+                  </ul>
+               </div>
+
             </div>
-            <div class="sendMessage_form">
-               <div class="sendMessage_leftside">
-                  <div class="img">
-                     <img class="Img_mePhoto" src="img/me.jpg" alt="myPhoto">
+            <div class="sendMessage_rightside">
+               <form class="sendMessage_position" action="#">
+                  <div class="sendMessage_item">
+                     <h4 class="small_title title_form">Send us message</h4>
+                     <p class="title_item">Full Name</p> <input class="input" type="text" maxlength="25" size="40"
+                        placeholder="Your Name">
                   </div>
-
-                  <div class="sendMessage_adress">
-                     <h4 class="small_title">Address</h4>
-                     <p>Lorem ipsum dolor sit amet</p>
+                  <div class="sendMessage_item">
+                     <p class="title_item">Email</p> <input class="input" type="text" maxlength="25" size="40"
+                        placeholder="Your Mail">
                   </div>
-
-                  <div class="sendMessage_phone">
-                     <h4 class="small_title">Phone</h4>
-                     <ul>
-                        <li><a href="tel:89870000000"></a> 89870000000</li>
-                        <li><a href="tel:89870000001"></a> 89870000001</li>
-                     </ul>
+                  <div class="sendMessage_item">
+                     <p class="title_item">Message</p>
+                     <textarea class="input" name="text" cols="30" rows="10" placeholder="Your Messege"></textarea>
                   </div>
-
-                  <div class="sendMessage_online">
-                     <h4 class="small_title">Online Service</h4>
-                     <ul>
-                        <li class="myPage">
-                           <a href="index.html">My website</a>
-                        </li>
-                        <li class="email">
-                           <a href="email">My email</a>
-                        </li>
-                     </ul>
-                  </div>
-
-               </div>
-               <div class="sendMeddage_rightside">
-                  <form action="#">
-                     <h4 class="small_title">Send us message</h4>
-                     Full Name <input class="input" type="text" maxlength="25" size="40"
-                        placeholder="Ivanov Ivan Ivanovich"><br>
-                     Email <input class="input" type="text" maxlength="25" size="40" placeholder="mymail@gmail.com">
-                     <p>Message</p>
-                     <textarea class="input" name="text" cols="30" rows="10" placeholder="Enter you message"></textarea>
-                     <button class="send">Submit
-                     </button>
-                  </form>
-               </div>
+                  <div><button class="btn_send">Submit</button></div>
+               </form>
             </div>
          </div>
 
@@ -89,7 +99,7 @@
          <div class="sendMessage_bottom">
             <div class="sendMessage_map">
                <script type="text/javascript" charset="utf-8" async
-                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2599534a0c811e816d22dcb3fac6c934725f733d9a6d1a6b843de66ccccf53c7&amp;width=98vw&amp;margin-left: calc (50% - 50vw)&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
+                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2599534a0c811e816d22dcb3fac6c934725f733d9a6d1a6b843de66ccccf53c7&amp;margin-left: calc (50% - 50vw)&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
                   </script>
             </div>
          </div>
@@ -100,12 +110,12 @@
 
    <footer class="footer">
       <hr>
-
-      <vid class="container">
+      <div class="container">
          <div class="footer_top">
             <div class="footer_top-content">
-               <h3>Interestedto woek withour team?</h3>
-               <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem consequuntur assumenda mollitia vero
+               <h3 class="footer_top-title">Interestedto woek withour team?</h3>
+               <P class="footer_top-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem consequuntur
+                  assumenda mollitia vero
                   eligendi ex dolorem. Molestiae unde officiis velit autem, </P>
             </div>
             <div class="footer_top-bottom">
@@ -114,17 +124,17 @@
          </div>
          <div class="footer_bottom">
             <div class="footer_bottom-content">
-               <div class="footer_bottom-contact">
+               <div class="footer_bottom-contacts">
                   <ul>
-                     <li>Тут будут мои контакты</li>
-                     <li><a href="tel:89870000000">89870000000</a></li>
-                     <li><a href="mailto:test@gmail.com">test@gmail.com</a></li>
+                     <li class="footer_bottom-item">Тут будут мои контакты</li>
+                     <li class="footer_bottom-item"><a href="tel:89870000000">89870000000</a></li>
+                     <li class="footer_bottom-item"><a href="mailto:test@gmail.com">test@gmail.com</a></li>
                   </ul>
                </div>
-               <div class="copyright">All rights reserved&copy;</div>
+               <div class="footer_bottom-copyright">All rights reserved &copy;</div>
             </div>
          </div>
-      </vid>
+      </div>
 
    </footer>
 </body>

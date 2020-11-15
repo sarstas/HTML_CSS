@@ -1,12 +1,260 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
 body{
    font-family: sans-serif;
 }
+li {
+   list-style-type: none; /* Убираем маркеры */
+  }
 
 p{
    font-size: 16px;
    line-height: 26px;
    color: #1F3F68;
 }
+
+.container{
+   max-width: 900px;
+   margin: 0 auto;
+}
+/*стили для главной*/
+.header{
+   
+}
+
+.header_top{
+   height: 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header_logo{
+   position: relative;
+}
+
+.circle{
+   width: 25px;
+   height: 25px;
+   border: 1px solid darkblue;
+   border-radius: 50%;
+   position: absolute;
+}
+
+.circle_blue{
+   left: 12px;
+   background: #0a096b;
+}
+
+.header_main{
+   display: flex;
+   height: 500px;
+   max-width: 450px;
+}
+
+.header_main-title{
+   font-size: 3em;
+   font-weight: lighter;
+   margin: 80px 20px 20px 0;
+}
+
+.about_title{
+   text-align: center;
+   font-size: 2em;
+   font-weight: lighter;
+   padding: 30px 0 80px;
+}
+
+.abut_items{
+   display: flex;
+   justify-content: space-between;
+}
+
+.about_item{
+   height: 350px;
+   flex-grow: 1;
+   max-width: 250px;
+   flex-basis: 200px;
+}
+
+.about_bottom{
+   text-align: center;
+}
+
+.about_bottom-title{
+   font-size: 2em;
+   font-weight: lighter;
+   margin: 10px 0 40px;
+}
+
+.about_bottom-content{
+   margin: 40px;
+}
+
+.product{
+   height: 700px;
+   padding-bottom: 50px;
+}
+
+.product_items{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.product_item{
+   height: 300px;
+   flex-grow: 1;   
+   border: 1px solid #000;
+   border-radius: 5%;
+}
+
+.product_item-bigger{
+   flex-basis: 900px;
+   flex-grow: 1;
+   max-width: 900px;
+}
+
+.footer{
+   color: #FFFFFF;
+   background: rgb(33, 122, 173);
+}
+
+.footer_top{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 50px;
+}
+
+.footer_top-content{
+   padding: 100px 0;
+}
+
+.footer_top-title{
+   font-size: 2em;
+   font-weight: lighter;
+   margin: 10px 0 40px;
+}
+
+.footer_top-text{
+   max-width: 400px;
+}  
+
+.footer_top-bottom{
+   padding: 10px 50px;
+   color: #FFFFFF;
+   background: rgb(148, 136, 250);
+   
+}
+
+.footer_bottom-contacts{
+   height: 150px;
+}
+
+.footer_bottom-item{
+   display: inline;
+   margin-left: 250px;
+}
+
+.footer_bottom-item:first-child{
+   margin-left: 0;
+}
+
+.footer_bottom-copyright{
+   height: 100px;
+}
+
+/*стили бля контактов*/
+
+.sendMessage_top{
+   height: 200px;
+}
+
+.title_contact{
+   margin: 20px ;
+}
+
+.sendMessage_form{
+   display: flex;
+   justify-content: space-between;
+}
+
+.sendMessage_leftside{
+
+}
+
+.img_mePhoto{
+   height: 250px;
+   width: 200px;
+   padding-bottom: 30px;
+}
+
+.sendMessage_adress{
+   
+}
+
+.phone_items {
+   line-height: 3em;
+}
+
+.link_item{
+   line-height: 3em;
+}
+
+.sendMessage_rightside{
+   width: 500px;
+   border-radius: 5px ;
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.sendMessage_position{
+   padding-left: 50px;
+}
+
+.sendMessage_online{
+   margin-bottom: 50px;
+}
+
+.title_form{
+   text-transform: uppercase;
+   font-weight: lighter;
+   font-size: 2em;
+}
+
+.title_item{
+   line-height: 3em;
+}
+
+.sendMessage_item{
+   margin-bottom: 50px;
+}
+
+.btn_send{
+   height: 80px;
+   width: 400px;
+   background-color: #5A98D0;
+   box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+   border-radius: 10px;
+   font-weight: 500px;
+   font-size: 16px;
+   line-height: 26px;
+   text-align: center;
+   color: #FFFFFF;
+   text-transform: uppercase;
+}
+
+.sendMessage_map{
+   margin:  50px 0;
+}
+
+/*.title_item::placeholder {
+   color: red;
+   transform: translateY(-100px) translateY(50%);
+}*/
 
 .title{
    font-size: 16px;
@@ -28,6 +276,7 @@ p{
    font-size: 20px;
    line-height: 30px;
    color: #1F3F68;
+   padding: 30px 0;
 }
 
 .input{
@@ -35,7 +284,11 @@ p{
    box-sizing: border-box;
    border-radius: 10px;
    opacity: 0.4;
+   height: 80px;
+   width: 400px;
+   padding-right: 15px;
 }
+
 
 .send{
    background-color: #5A98D0;
